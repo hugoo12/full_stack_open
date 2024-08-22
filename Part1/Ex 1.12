@@ -20,12 +20,11 @@ const App = () => {
   }
 
   const showRandom = () => {
-    console.log(getRandom())
     setSelected(getRandom())
   }
   return (
     <div>
-      {anecdotes[selected]}
+      <p>{anecdotes[selected]}</p>
       <button onClick={showRandom}>
         Next Anecdote
       </button>
